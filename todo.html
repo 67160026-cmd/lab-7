@@ -3,7 +3,43 @@
   <head>
     <title>Todo List</title>
     <style>
-      /* นิสิตเขียนเอง */
+      /* Container styling */
+      .todo-container {
+        width: 100%;
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(173, 113, 113, 0.1);
+      }
+
+      /* List item styling */
+      .todo-item {
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      /* Completed state styling */
+      .completed span {
+        text-decoration: line-through;
+        opacity: 0.6;
+      }
+
+      /* Delete button styling */
+      .delete-btn {
+        background-color: #ff4d4d;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      .delete-btn:hover {
+        background-color: #ff0000;
+      }
     </style>
   </head>
   <body>
